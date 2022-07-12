@@ -2,20 +2,23 @@
 <html lang="ja">
     <head>
         <script src="index.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link href="main.css" rel="stylesheet" type="text/css" media="all">
         <meta charset="UTF-8"/>
         <title>calender</title>
     </head>
 
     <body>
         <h1>CALENDAR</h1>
-        <h2 class="status"><script>document.write(`${String(month)}/${String(year)}`);</script></h2>
-        <div class="susumu">
-            <p>→</p>
-        </div>
+        <h2 class="status" id = "yearandmonth"><script>document.write(`${String(month)}/${String(year)}`);</script></h2>
+        <div class="monthchanger">
+            <div class="modoru" id ="modoru">
+                <p>←</p>
+            </div>
+            <div class="susumu" id="susumu">
+                <p>→</p>
+            </div>
     
-        <div class="modoru">
-            <p>←</p>
+           
         </div>
         <table class="calendar" border="1">
             <thead>
@@ -30,58 +33,58 @@
                 </tr>
             </thead>
             <tr>
-                <td class = "day" id = "sun1"><script>document.write(dayarray[0]);</script></td>
-                <td class = "day" id = "mon1"><script>document.write(dayarray[1]);</script></td>
-                <td class = "day" id = "tue1"><script>document.write(dayarray[2]);</script></td>
-                <td class = "day" id = "wed1"><script>document.write(dayarray[3]);</script></td>
-                <td class = "day" id = "thu1"><script>document.write(dayarray[4]);</script></td>
-                <td class = "day" id = "fri1"><script>document.write(dayarray[5]);</script></td>
-                <td class = "day" id = "sat1"><script>document.write(dayarray[6]);</script></td>
+                <td class = "day" id = "1"><script>document.write(dayarray[0]);</script></td>
+                <td class = "day" id = "2"><script>document.write(dayarray[1]);</script></td>
+                <td class = "day" id = "3"><script>document.write(dayarray[2]);</script></td>
+                <td class = "day" id = "4"><script>document.write(dayarray[3]);</script></td>
+                <td class = "day" id = "5"><script>document.write(dayarray[4]);</script></td>
+                <td class = "day" id = "6"><script>document.write(dayarray[5]);</script></td>
+                <td class = "day" id = "7"><script>document.write(dayarray[6]);</script></td>
             </tr>
             <tr>
-                <td class = "day" id="sun2"><script>document.write(dayarray[7]);</script></td>
-                <td class = "day" id="mon2"><script>document.write(dayarray[8]);</script></td>
-                <td class = "day" id="tue2"><script>document.write(dayarray[9]);</script></td>
-                <td class = "day" id="wed2"><script>document.write(dayarray[10]);</script></td>
-                <td class = "day" id="thu2"><script>document.write(dayarray[11]);</script></td>
-                <td class = "day" id="fri2"><script>document.write(dayarray[12]);</script></td>
-                <td class = "day" id="sat2"><script>document.write(dayarray[13]);</script></td>
+                <td class = "day" id="8"><script>document.write(dayarray[7]);</script></td>
+                <td class = "day" id="9"><script>document.write(dayarray[8]);</script></td>
+                <td class = "day" id="10"><script>document.write(dayarray[9]);</script></td>
+                <td class = "day" id="11"><script>document.write(dayarray[10]);</script></td>
+                <td class = "day" id="12"><script>document.write(dayarray[11]);</script></td>
+                <td class = "day" id="13"><script>document.write(dayarray[12]);</script></td>
+                <td class = "day" id="14"><script>document.write(dayarray[13]);</script></td>
             </tr>
-                <td class = "day" id="sun3"><script>document.write(dayarray[14]);</script></td>
-                <td class = "day" id="mon3"><script>document.write(dayarray[15]);</script></td>
-                <td class = "day" id="tue3"><script>document.write(dayarray[16]);</script></td>
-                <td class = "day" id="wed3"><script>document.write(dayarray[17]);</script></td>
-                <td class = "day" id="thu3"><script>document.write(dayarray[18]);</script></td>
-                <td class = "day" id="fri3"><script>document.write(dayarray[19]);</script></td>
-                <td class = "day" id="sat3"><script>document.write(dayarray[20]);</script></td>
+                <td class = "day" id="15"><script>document.write(dayarray[14]);</script></td>
+                <td class = "day" id="16"><script>document.write(dayarray[15]);</script></td>
+                <td class = "day" id="17"><script>document.write(dayarray[16]);</script></td>
+                <td class = "day" id="18"><script>document.write(dayarray[17]);</script></td>
+                <td class = "day" id="19"><script>document.write(dayarray[18]);</script></td>
+                <td class = "day" id="20"><script>document.write(dayarray[19]);</script></td>
+                <td class = "day" id="21"><script>document.write(dayarray[20]);</script></td>
             </tr>
             <tr>
-                <td class = "day" id ="sun4"><script>document.write(dayarray[21]);</script></td>
-                <td class = "day" id ="mon4"><script>document.write(dayarray[22]);</script></td>
-                <td class = "day" id ="tue4"><script>document.write(dayarray[23]);</script></td>
-                <td class = "day" id ="wed4"><script>document.write(dayarray[24]);</script></td>
-                <td class = "day" id ="thu4"> <script>document.write(dayarray[25]);</script></td>
-                <td class = "day" id="fri4"><script>document.write(dayarray[26]);</script></td>
-                <td class = "day" id="sat4"><script>document.write(dayarray[27]);</script></td>
+                <td class = "day" id ="22"><script>document.write(dayarray[21]);</script></td>
+                <td class = "day" id ="23"><script>document.write(dayarray[22]);</script></td>
+                <td class = "day" id ="24"><script>document.write(dayarray[23]);</script></td>
+                <td class = "day" id ="25"><script>document.write(dayarray[24]);</script></td>
+                <td class = "day" id ="26"> <script>document.write(dayarray[25]);</script></td>
+                <td class = "day" id="27"><script>document.write(dayarray[26]);</script></td>
+                <td class = "day" id="28"><script>document.write(dayarray[27]);</script></td>
             </tr>
             
             <tr>
-                <td class = "day" id ="sun5"><script>document.write(dayarray[28]);</script></td>
-                <td class = "day" id ="mon5"><script>document.write(dayarray[29]);</script></td>
-                <td class = "day" id ="tue5"><script>document.write(dayarray[30]);</script></td>
-                <td class = "day" id ="wed5"><script>document.write(dayarray[31]);</script></td>
-                <td class = "day" id ="thu5"><script>document.write(dayarray[32]);</script></td>
-                <td class = "day" id ="fri5"><script>document.write(dayarray[33]);</script></td>
-                <td class = "day" id ="sat5"><script>document.write(dayarray[34]);</script></td>
+                <td class = "day" id ="29"><script>document.write(dayarray[28]);</script></td>
+                <td class = "day" id ="30"><script>document.write(dayarray[29]);</script></td>
+                <td class = "day" id ="31"><script>document.write(dayarray[30]);</script></td>
+                <td class = "day" id ="32"><script>document.write(dayarray[31]);</script></td>
+                <td class = "day" id ="33"><script>document.write(dayarray[32]);</script></td>
+                <td class = "day" id ="34"><script>document.write(dayarray[33]);</script></td>
+                <td class = "day" id ="35"><script>document.write(dayarray[34]);</script></td>
             </tr>
             <tr>
-                <td class = "day" id ="sun6"><script>document.write(dayarray[35]);</script></td>
-                <td class = "day" id ="mon6"><script>document.write(dayarray[36]);</script></td>
-                <td class = "day" id ="tue6"><script>document.write(dayarray[37]);</script></td>
-                <td class = "day" id ="wed6"><script>document.write(dayarray[38]);</script></td>
-                <td class = "day" id ="thu6"><script>document.write(dayarray[39]);</script></td>
-                <td class = "day" id ="fri6"><script>document.write(dayarray[40]);</script></td>
-                <td class = "day" id ="sat6"><script>document.write(dayarray[41]);</script></td>
+                <td class = "day" id ="36"><script>document.write(dayarray[35]);</script></td>
+                <td class = "day" id ="37"><script>document.write(dayarray[36]);</script></td>
+                <td class = "day" id ="38"><script>document.write(dayarray[37]);</script></td>
+                <td class = "day" id ="39"><script>document.write(dayarray[38]);</script></td>
+                <td class = "day" id ="40"><script>document.write(dayarray[39]);</script></td>
+                <td class = "day" id ="41"><script>document.write(dayarray[40]);</script></td>
+                <td class = "day" id ="42"><script>document.write(dayarray[41]);</script></td>
             </tr>
         </table>    
     </body>
