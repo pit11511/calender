@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <script src="index.js"></script>
+        <script src="index.js"></script> 
         <link href="main.css" rel="stylesheet" type="text/css" media="all">
         <meta charset="UTF-8"/>
         <title>calender</title>
@@ -20,6 +20,7 @@
     
            
         </div>
+        
         <table class="calendar" id ="calendar" border="1">
             <thead>
                 <tr>
@@ -32,7 +33,10 @@
                     <th>SAT</th>
                 </tr>
             </thead>
-           
-        </table>    
+        </table>
+        <form method ="get" name ="dayform">
+            <input type="month" id="dayformer">
+            <input type="button" value="決定">
+        </form>  
     </body>
 </html>
